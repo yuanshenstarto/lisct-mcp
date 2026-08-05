@@ -1,0 +1,44 @@
+{
+  "name": "lisct-mcp",
+  "version": "0.1.0",
+  "description": "MCP server and REST client for lisct — read and write your sets with an API key",
+  "keywords": ["lisct", "mcp", "model-context-protocol", "claude", "sets"],
+  "homepage": "https://lisct.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanshenstarto/lisct-mcp.git"
+  },
+  "license": "MIT",
+  "author": "yuanshenstarto",
+  "type": "module",
+  "bin": {
+    "lisct-mcp": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
