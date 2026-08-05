@@ -1,12 +1,15 @@
 {
   "name": "lisct-mcp",
-  "version": "0.1.0",
-  "description": "MCP server and REST client for lisct — read and write your sets with an API key",
+  "version": "0.1.1",
+  "description": "MCP server and REST client for lisct (https://lisct.com) — read and write your sets with an API key",
   "keywords": ["lisct", "mcp", "model-context-protocol", "claude", "sets"],
-  "homepage": "https://lisct.com",
+  "homepage": "https://github.com/yuanshenstarto/lisct-mcp#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuanshenstarto/lisct-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuanshenstarto/lisct-mcp/issues"
   },
   "license": "MIT",
   "author": "yuanshenstarto",

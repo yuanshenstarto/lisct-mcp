@@ -2,6 +2,8 @@
 
 MCP server (stdio) and REST client for [lisct](https://lisct.com), authenticated with an API key.
 
+Source: [github.com/yuanshenstarto/lisct-mcp](https://github.com/yuanshenstarto/lisct-mcp)
+
 ## MCP host config
 
 ```json
