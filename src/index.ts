@@ -6,7 +6,12 @@ export {
   type LisctClient,
   type LisctResult,
 } from "./client.js";
-export { mcpEndpoint, runBridge, type BridgeOptions } from "./bridge.js";
+export {
+  mcpEndpoint,
+  probeBridge,
+  runBridge,
+  type BridgeOptions,
+} from "./bridge.js";
 export {
   OP_NAMES,
   READ_OPS,

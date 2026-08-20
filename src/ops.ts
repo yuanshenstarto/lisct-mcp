@@ -8,7 +8,9 @@ export interface OpInputs {
   expand: { root?: string; depth?: number };
   get_set: { set: string };
   search: { query: string; limit?: number };
+  neighbors: { ref: string; limit?: number };
   create_set: { expression: string; parent?: string };
+  create_tree: { outline: string; parent?: string };
   add_elements: { set: string; expression: string };
   remove_elements: { set: string; elements: string[] };
   rename_element: { set: string; element: string; to: string };
@@ -19,10 +21,11 @@ export interface OpInputs {
 
 export type OpName = keyof OpInputs;
 
-export const READ_OPS = ["expand", "get_set", "search"] as const;
+export const READ_OPS = ["expand", "get_set", "search", "neighbors"] as const;
 
 export const WRITE_OPS = [
   "create_set",
+  "create_tree",
   "add_elements",
   "remove_elements",
   "rename_element",
